@@ -1,8 +1,16 @@
 import { Button } from "@mui/material";
 import { Routes, Route, Navigate } from "react-router-dom";
 import { useDrawerContext } from "../shared/contexts";
+import { useEffect } from "react";
 export const AppRoutes = () => {
-  const { toggleDrawerOpen } = useDrawerContext();
+  const { toggleDrawerOpen, setDrawerOption } = useDrawerContext();
+
+  useEffect(() => {
+    setDrawerOption([
+      { icon: "home", label: "Pagina incial", path: "/pagina-inicial" },
+    ]);
+  });
+
   return (
     <Routes>
       <Route

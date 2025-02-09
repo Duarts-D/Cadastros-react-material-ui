@@ -9,7 +9,7 @@ export const AppRoutes = () => {
     setDrawerOption([
       { icon: "home", label: "Pagina incial", path: "/pagina-inicial" },
     ]);
-  });
+  }, []);
 
   return (
     <Routes>

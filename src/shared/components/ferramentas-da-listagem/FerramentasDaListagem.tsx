@@ -44,7 +44,7 @@ export const FerramentasDaListagem: React.FC<IFerramentasDaListagemProps> = ({
             disableElevation
             color="primary"
             onClick={aoClicarEmNovo}
-            endIcon={<Icon>add</Icon>}
+            startIcon={<Icon>add</Icon>}
           >
             {textBotaoNovo}
           </Button>
